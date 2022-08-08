@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+
+
+header{
+    font-size: 1.5rem;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+form, header{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    outline: none;
+    margin-left: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+form button{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    padding-right: 15px;
+    transition: all 0.5s ease;
+}
+form button:hover{
+    background-color: #000;
+    color: white;
+}
+
+form input, button{
+    padding: 8.4px;
+    font-size: 1.4rem;
+    font-weight: 50;
+    border: none;
+    opacity: 0.93;
+}
+.todo-input{
+    padding-left: 10px;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 50%;
+    list-style: none;
+}
+.todo{
+    margin: 20px;
+    margin-right: 0;
+    border-radius: 18px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.todo li{
+    flex: 1;
+    padding-left: 10px;
+}
+.trbtn{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.trbtn,.checkbtn,.editbtn{
+    background-color: white;
+    font-size: 1rem;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.trbtn:hover,.checkbtn:hover,.editbtn:hover{
+    background-color: #000;
+    color: white;
+}
+
+.fa-trash,
+.fa-edit,
+.fa-check{
+    pointer-events: none;
+}
+
+.complete{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    /* transform: translate3d(8rem) rotatez(20deg); */
+    transform: translateY(8rem) rotatez(20deg); 
+    opacity: 0;
+}
+
+select{
+    appearance: none;
+    outline: none;
+    border: none;
+}
+select{
+    width: 9rem;
+    cursor: pointer;
+    color: #000;
+    padding: 0.8rem;
+    border-radius: 22px;
+    font-size: 1rem;
+}
+.select{
+    margin: 1rem;
+    margin-right: 0;
+    position: relative;
+    overflow: hidden;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: black;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+    pointer-events: none;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transition: all 0.3s ease;
+}
+.select:hover::after{
+    background: rgb(238, 237, 237);
+    color: black;
+}
+
+
+.editinput{
+    outline: none;
+    font-size: x-large;
+    border: none;
+}
