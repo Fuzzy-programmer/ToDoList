@@ -3,7 +3,6 @@ const todoinput= document.querySelector('.todo-input')
 const todobtn= document.querySelector('.todo-button')
 const todoList= document.querySelector('.todo-list')
 const filter=document.querySelector('.filter-todo')
-// const editbtn=document.querySelector('.editbtn')
 
 // Event Listners
 document.addEventListener('DOMContentLoaded', gettodos)
@@ -70,7 +69,6 @@ function deleteCheck(event){
 
 // filter function for todos
 function filterTodo(e){
-    e.preventDefault()
     const todos=todoList.childNodes
     todos.forEach(function(todo){
         switch(e.target.value){
@@ -80,14 +78,16 @@ function filterTodo(e){
             case 'completed':
                 if(todo.classList.contains('complete')){
                     todo.style.display='flex'
-                }else{
+                }
+                else{
                     todo.style.display='none'
                 }
                 break
             case 'incomplete':
                 if(!todo.classList.contains('complete')){
                     todo.style.display='flex'
-                }else{
+                }
+                else{
                     todo.style.display='none'
                 }
                 break

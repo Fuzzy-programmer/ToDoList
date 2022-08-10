@@ -89,7 +89,7 @@ form input, button{
 }
 .trbtn,.checkbtn,.editbtn{
     background-color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: all 0.3 ease;
     cursor: pointer;
     transition: all 0.5s ease;
