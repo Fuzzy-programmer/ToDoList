@@ -144,13 +144,14 @@ select{
     top: 0;
     right: 0;
     padding: 1rem;
-    padding-top: 0.77rem;
-    padding-bottom: 0.77rem;
+    padding-top: 0.67rem;
+    padding-bottom: 0.66rem;
     pointer-events: none;
     border-top-right-radius: 18px; 
     border-bottom-right-radius: 18px;
     transition: all 0.3s ease;
 }
+
 .select:hover::after{
     background: black;
     color: white;
