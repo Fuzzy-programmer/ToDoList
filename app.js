@@ -54,12 +54,17 @@ function deleteCheck(event){
         todo.classList.toggle('complete')
     }
 
+    // edit todo
     if(item.classList[0]=='editbtn'){
+        if(todo.classList.contains('complete')){
+            alert('The todo is already completed')
+        }else{
         todo.children[0].contentEditable=true
         todo.children[0].addEventListener('focusout',function(){
             todo.children[0].contentEditable=false
             updatetodo(todo.children[0].innerText,a)
         })
+        }
     }
 }
 
