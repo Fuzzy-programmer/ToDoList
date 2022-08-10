@@ -12,7 +12,7 @@ body{
 
 
 header{
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-top: 30px;
     margin-bottom: 10px;
 }
@@ -139,20 +139,21 @@ select{
 .select::after{
     content: "\25BC";
     position: absolute;
-    background: black;
+    color: black;
+    background: white;
     top: 0;
     right: 0;
     padding: 1rem;
-    padding-top: 0.55rem;
-    padding-bottom: 0.55rem;
+    padding-top: 0.77rem;
+    padding-bottom: 0.77rem;
     pointer-events: none;
-    border-top-right-radius: 18px;
+    border-top-right-radius: 18px; 
     border-bottom-right-radius: 18px;
     transition: all 0.3s ease;
 }
 .select:hover::after{
-    background: rgb(238, 237, 237);
-    color: black;
+    background: black;
+    color: white;
 }
 
 

@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', gettodos)
 todobtn.addEventListener('click', addtotdo)
 todoList.addEventListener('click', deleteCheck)
 filter.addEventListener('click', filterTodo)
-// editbtn.addEventListener('click', editcontent)
 todoList.removeChild(todoList.firstChild)
 
 // Functions
@@ -71,6 +70,7 @@ function deleteCheck(event){
 
 // filter function for todos
 function filterTodo(e){
+    e.preventDefault()
     const todos=todoList.childNodes
     todos.forEach(function(todo){
         switch(e.target.value){
