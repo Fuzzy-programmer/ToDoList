@@ -52,10 +52,13 @@ form input, button{
     border: none;
     opacity: 0.93;
 }
-.todo-input{
+.todo-input, .todo-button{
     padding-left: 10px;
+    transition: all 0.3s;
 }
-
+.todo-input:hover, todo-button:hover{
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+}
 .todo-container{
     display: flex;
     justify-content: center;
@@ -153,8 +156,9 @@ select{
 }
 
 
-.editinput{
+.editinput,.todo-item{
     outline: none;
     font-size: x-large;
     border: none;
 }
+

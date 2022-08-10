@@ -24,22 +24,6 @@ function addtotdo(event){
     <button class='checkbtn'><i class="fas fa-check"></i></button>
     <button class="editbtn"><i class="fas fa-edit"></i></button>
     <button class="trbtn"><i class="fas fa-trash"></i></button>`
-    // // create li
-    // const newtodo=document.createElement('li')
-    // newtodo.innerText=todoinput.value
-    // newtodo.classList.add('todo-item')
-    // tododiv.appendChild(newtodo)
-    // // check button
-    // const completebtn=document.createElement('button')
-    // completebtn.innerHTML='<i class="fas fa-check"></i>'
-    // completebtn.classList.add('checkbtn')
-    // tododiv.appendChild(completebtn)
-    // // trash button
-    // const trashbtn=document.createElement('button')
-    // trashbtn.innerHTML='<i class="fas fa-trash"></i>'
-    // trashbtn.classList.add('trbtn')
-    // tododiv.appendChild(trashbtn)
-    // // appedn to todolist class
     if(todoinput.value!=''){
     storetodo(todoinput.value)
     todoList.appendChild(tododiv)}
@@ -53,9 +37,10 @@ function addtotdo(event){
 function deleteCheck(event){
     // console.log(event.target)
     const item=event.target
+    const todo=item.parentElement
+    const a=index(todo)
     // delete todo
     if(item.classList[0]==='trbtn'){
-        const todo=item.parentElement
         // animation
         todo.classList.add('fall')
         remmovelocaltodos(todo)
@@ -66,18 +51,17 @@ function deleteCheck(event){
 
     // check mark
     if(item.classList[0]=='checkbtn'){
-        const todo=item.parentElement
         todo.classList.toggle('complete')
     }
 
     if(item.classList[0]=='editbtn'){
-        const todoitem=document.querySelector('.todo-item')
-        console.log(todoitem.innerText)
-        todoitem.innerHTML=`<input type=text class="editinput" value="${todoitem.innerText}">`
-        console.log(todoitem.innerText)
+        todo.children[0].contentEditable=true
+        todo.children[0].addEventListener('focusout',function(){
+            todo.children[0].contentEditable=false
+            updatetodo(todo.children[0].innerText,a)
+        })
     }
 }
-
 
 
 // filter function for todos
@@ -151,3 +135,26 @@ function remmovelocaltodos(todo){
 }
 
 
+// Edit functions
+function index(todo){
+    let todos;
+    if(localStorage.getItem('todos') ==  null){
+        todos=[]
+    } else{
+        todos =JSON.parse(localStorage.getItem('todos'))
+    }
+    const a=todo.children[0].innerText
+    const todoindex= todos.indexOf(a)
+    return todoindex
+}
+
+function updatetodo(txt,index){
+    let todos;
+    if(localStorage.getItem('todos') ==  null){
+        todos=[]
+    } else{
+        todos =JSON.parse(localStorage.getItem('todos'))
+    }
+    todos[index]=txt
+    localStorage.setItem("todos", JSON.stringify(todos))
+}
