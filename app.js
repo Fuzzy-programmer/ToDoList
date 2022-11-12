@@ -7,7 +7,7 @@ const filter=document.querySelector('.filter-todo')
 // Event Listners
 document.addEventListener('DOMContentLoaded', gettodos)
 todobtn.addEventListener('click', addtotdo)
-todoList.addEventListener('click', deleteCheck)
+todoList.addEventListener('click', deleteEditCheck)
 filter.addEventListener('click', filterTodo)
 todoList.removeChild(todoList.firstChild)
 
@@ -32,7 +32,7 @@ function addtotdo(event){
 }
 
 // delete
-function deleteCheck(event){
+function deleteEditCheck(event){
     // console.log(event.target)
     const item=event.target
     const todo=item.parentElement
@@ -50,6 +50,7 @@ function deleteCheck(event){
     // check mark
     if(item.classList[0]=='checkbtn'){
         todo.classList.toggle('complete')
+        remmovelocaltodos(todo)
     }
 
     // edit todo
