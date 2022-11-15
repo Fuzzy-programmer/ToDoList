@@ -23,6 +23,13 @@ form, header{
     justify-content: center;
     align-items: center;
 }
+footer{
+    margin-top: 20px;
+    position: fixed;
+    right: 35%;
+    bottom: 0%;
+    z-index: 5;
+}
 
 form input{
     outline: none;
