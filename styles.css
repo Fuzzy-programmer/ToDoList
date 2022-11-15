@@ -24,6 +24,7 @@ form, header{
     align-items: center;
 }
 footer{
+    display: flex;
     margin-top: 20px;
     position: fixed;
     right: 35%;
