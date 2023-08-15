@@ -31,6 +31,13 @@ function addtotdo(event){
     todoinput.value=''
 }
 
+todoinput.addEventListener("keyup", function(event) {
+    if (event.key === "Enter" && todoinput.value.trim() !== "") {
+        addtotdo(todoinput.value);
+        todoinput.value = "";
+    }
+});
+
 // delete
 function deleteEditCheck(event){
     // console.log(event.target)
