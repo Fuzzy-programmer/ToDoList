@@ -11,6 +11,9 @@
     <title>Todo List</title>
 </head>
 <body>
+    <section id="loadinganimate">
+        <!-- loading animation -->
+    </section>
     <header>
         Todo List
     </header>
@@ -42,5 +45,12 @@
     </footer>
 
     <script src="./app.js"></script>
+    <script>
+        var loader=document.getElementById("loadinganimate")
+
+        window.addEventListener("load", function(){
+            loader.style.display="none";
+        })
+    </script>
 </body>
 </html>
