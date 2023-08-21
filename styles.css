@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: #282828;
     font-family: Poppins, sans-serif;
     color: white;
 }
@@ -41,13 +41,13 @@ form button{
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
     background-color: white;
-    color: #000;
+    color: #282828;
     cursor: pointer;
     padding-right: 15px;
     transition: all 0.5s ease;
 }
 form button:hover{
-    background-color: #000;
+    background-color: #282828;
     color: white;
 }
 
@@ -79,7 +79,7 @@ form input, button{
     margin-right: 0;
     border-radius: 18px;
     background-color: white;
-    color: black;
+    color: #282828;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +102,7 @@ form input, button{
 }
 
 .trbtn:hover,.checkbtn:hover,.editbtn:hover{
-    background-color: #000;
+    background-color: #282828;
     color: white;
 }
 
@@ -131,7 +131,7 @@ select{
 select{
     width: 9rem;
     cursor: pointer;
-    color: #000;
+    color: #282828;
     padding: 0.8rem;
     border-radius: 22px;
     font-size: 1rem;
@@ -145,7 +145,7 @@ select{
 .select::after{
     content: "\25BC";
     position: absolute;
-    color: black;
+    color: #282828;
     background: white;
     top: 0;
     right: 0;
@@ -159,7 +159,7 @@ select{
 }
 
 .select:hover::after{
-    background: black;
+    background: #282828;
     color: white;
 }
 
