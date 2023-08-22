@@ -13,8 +13,8 @@ body{
 
 header{
     font-size: 2rem;
-    padding-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 form, header{
@@ -32,19 +32,18 @@ footer {
 
 form input{
     outline: none;
-    margin-left: 20px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25em;
+    border-bottom-left-radius: 25em;
 }
 
 form button{
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25em;
+    border-top-right-radius: 25em;
     background-color: white;
     color: #282828;
     cursor: pointer;
-    padding-right: 15px;
-    transition: all 0.5s ease;
+    padding-right: 0.5em;
+    transition: all 0.6s ease;
 }
 form button:hover{
     background-color: #282828;
@@ -52,18 +51,18 @@ form button:hover{
 }
 
 form input, button{
-    padding: 8.4px;
+    padding: 0.4em;
     font-size: 1.4rem;
     font-weight: 50;
     border: none;
     opacity: 0.93;
 }
 .todo-input, .todo-button{
-    padding-left: 10px;
-    transition: all 0.3s;
+    padding-left: 1em;
+    transition: all 0.6s;
 }
-.todo-input:hover, todo-button:hover{
-    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+form:hover .todo-input, form:hover .todo-button{
+    box-shadow: 0px 8px 10px rgba(255, 255, 255, 0.2);
 }
 .todo-container{
     display: flex;
@@ -75,19 +74,19 @@ form input, button{
     list-style: none;
 }
 .todo{
-    margin: 20px;
+    margin: 2rem;
     margin-right: 0;
-    border-radius: 18px;
+    border-radius: 18em;
     background-color: white;
     color: #282828;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.5s ease;
+    transition: all 0.6s ease;
 }
 .todo li{
     flex: 1;
-    padding-left: 10px;
+    padding-left: 0.5em;
 }
 .trbtn{
     border-top-right-radius: 15px;
@@ -96,9 +95,9 @@ form input, button{
 .trbtn,.checkbtn,.editbtn{
     background-color: white;
     font-size: 1.1rem;
-    transition: all 0.3 ease;
+    transition: all 0.6 ease;
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 0.6s ease;
 }
 
 .trbtn:hover,.checkbtn:hover,.editbtn:hover{
@@ -119,7 +118,8 @@ form input, button{
 
 .fall{
     /* transform: translate3d(8rem) rotatez(20deg); */
-    transform: translateY(8rem) rotatez(20deg); 
+    transform: scale(0.8);
+    box-shadow: 0 5px 10px blanchedalmond; 
     opacity: 0;
 }
 
@@ -133,7 +133,7 @@ select{
     cursor: pointer;
     color: #282828;
     padding: 0.8rem;
-    border-radius: 22px;
+    border-radius: 22em;
     font-size: 1rem;
 }
 .select{
@@ -155,13 +155,13 @@ select{
     pointer-events: none;
     border-top-right-radius: 18px; 
     border-bottom-right-radius: 18px;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
 }
-
 .select:hover::after{
     background: #282828;
     color: white;
 }
+
 
 
 .editinput,.todo-item{
