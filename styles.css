@@ -34,6 +34,7 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 25em;
+    flex-shrink: 3;
 }
 
 form input{
@@ -85,7 +86,6 @@ form input, button{
 }
 .todo{
     margin: 2rem;
-    margin-right: 0;
     border-radius: 18em;
     background-color: white;
     color: #282828;
@@ -139,6 +139,7 @@ select{
     appearance: none;
     outline: none;
     border: none;
+    flex-shrink: 0;
 }
 select{
     width: 100%;
@@ -152,7 +153,7 @@ select{
     margin: 1rem;
     margin-right: 0;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 .select::after{
     content: "\25BC";
