@@ -146,7 +146,7 @@ select{
     cursor: pointer;
     color: #282828;
     padding: 0.8rem;
-    border-radius: 22em;
+    border-radius: 24em;
     font-size: 1rem;
 }
 .select{
@@ -163,7 +163,7 @@ select{
     top: 0;
     right: 0;
     padding: 1rem;
-    padding-top: 0.59rem;
+    padding-top: 0.69rem;
     padding-bottom: 0.66rem;
     pointer-events: none;
     border-top-right-radius: 18px; 
