@@ -29,11 +29,18 @@ footer {
     right: 2%;
     z-index: 5;
 }
+.forminput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25em;
+}
 
 form input{
     outline: none;
     border-top-left-radius: 25em;
     border-bottom-left-radius: 25em;
+    width: 100%;
 }
 
 form button{
@@ -61,9 +68,12 @@ form input, button{
     padding-left: 1em;
     transition: all 0.6s;
 }
-form:hover .todo-input, form:hover .todo-button{
+.forminput:hover{
     box-shadow: 0px 8px 10px rgba(255, 255, 255, 0.2);
 }
+
+
+
 .todo-container{
     display: flex;
     justify-content: center;
@@ -86,7 +96,9 @@ form:hover .todo-input, form:hover .todo-button{
 }
 .todo li{
     flex: 1;
-    padding-left: 0.5em;
+    padding-left: 1em;
+    overflow: auto;
+    overflow-wrap: break-word;
 }
 .trbtn{
     border-top-right-radius: 15px;
@@ -129,7 +141,7 @@ select{
     border: none;
 }
 select{
-    width: 9rem;
+    width: 100%;
     cursor: pointer;
     color: #282828;
     padding: 0.8rem;
