@@ -153,7 +153,7 @@ select{
     margin: 1rem;
     margin-right: 0;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 }
 .select::after{
     content: "\25BC";
