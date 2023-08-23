@@ -27,8 +27,8 @@ form, header{
 }
 footer {
     position: fixed;
-    bottom: 0%;
-    right: 2%;
+    bottom: 3%;
+    right: 3%;
     z-index: 5;
 }
 .forminput{
