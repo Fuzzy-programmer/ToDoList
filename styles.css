@@ -86,7 +86,7 @@ form input, button{
 }
 .todo{
     margin: 2rem;
-    border-radius: 18em;
+    border-radius: 3em;
     background-color: white;
     color: #282828;
     display: flex;
