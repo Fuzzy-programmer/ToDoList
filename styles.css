@@ -156,7 +156,7 @@ select{
     width: 100%;
     cursor: pointer;
     color: #282828;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 24em;
     font-size: 1rem;
 }
