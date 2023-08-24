@@ -125,6 +125,7 @@ function gettodos(){
     }
     todos.forEach(function(todo){
         const tododiv=document.createElement('div')
+        tododiv.setAttribute("transition-style","in:wipe:down")
         tododiv.classList.add('todo')
         tododiv.innerHTML=`<li class='todo-item'>${todo}</li>
         <button class='checkbtn'><i class="fas fa-check"></i></button>
